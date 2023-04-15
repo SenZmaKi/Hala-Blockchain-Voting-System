@@ -88,7 +88,8 @@ function generateTransactionNote(voterId, uint) {
     }
 }
 
-async function sendVote(mainAccount, candidateAccountAddress, voterId){
+async function sendVote(chosenCandidate, voterId){
+    const candidateAccountAddresses = candidateAccountAddresses[chosenCandidate]
     voterId = voterId.toString();//to handle cases where voterId is passed as an int since the encrypter only accepts strings
     //Check for voter validity, if valid make the transaction(vote) and return true otherwise return false
     if (!await hasVoted(mainAccount, voterId)){
