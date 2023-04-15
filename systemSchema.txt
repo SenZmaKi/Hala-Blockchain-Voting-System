@@ -1,0 +1,10 @@
+Canditates
+    - ID
+    - Name
+    - photo
+Vote Counts
+    - Voters
+        - Registered or not? Assumption(Valid ID)
+        - ID - voted or not?
+        - Candidates count updated
+        
