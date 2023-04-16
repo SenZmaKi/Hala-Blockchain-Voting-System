@@ -42,6 +42,8 @@ Navigate to the installation directory via your terminal then navigate to the di
 To launch the front-end run navigate to the Hala directory and run
 
 ```npm run dev```
+  
+This will print a link, click this link to go the Hala Voting page after the following step
 
 To launch the backend server, open a different terminal window and navigate to the Hala directory and run 
 
