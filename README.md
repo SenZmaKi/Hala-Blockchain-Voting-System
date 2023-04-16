@@ -35,17 +35,17 @@ Clone the repository from github or in your terminal run
 
 ```git clone https://github.com/SenZmaKi/Hala-Blockchain-Voting-System```
 
-Navigate to the installation directory via your terminal then go to navigate to the folder named Hala and run
+Navigate to the installation directory via your terminal then navigate to the directory named Hala and run
 
 ```npm install ```
 
-To launch the front-end run navigate to your the root path and run
+To launch the front-end run navigate to the Hala directory and run
 
 ```npm run dev```
 
-To launch the backend server, open a different terminal window and when in the root path run 
+To launch the backend server, open a different terminal window and navigate to the Hala directory and run 
 
-```cd back-end```
+```cd backend```
 
 Then run 
 
