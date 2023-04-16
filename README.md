@@ -53,3 +53,8 @@ Then run
 
 ## Conclusion
 The Hala blockchain voting system is a secure and transparent way for voters to cast their votes. With the use of encrypted voter IDs and a smart contract to ensure the validity of the votes, the system is designed to prevent fraudulent activities and ensure a fair and accurate election.
+
+## Contributors
+
+David Manga
+Phidel Alvin
