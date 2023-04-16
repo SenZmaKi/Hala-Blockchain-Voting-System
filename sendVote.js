@@ -87,8 +87,14 @@ function generateTransactionNote(voterId, uint) {
         return hash.digest().toString('base64');
     }
 }
+//Pseudo function that checks if the voter is registered by pulling from the national government database
+function registrationValid(voterId){return true;}
 
 async function sendVote(chosenCandidate, voterId){
+    if(!registrationValid(voterId)){
+        console.error(`Voter with id ${voterId} is not a registered voter`);
+        return false;
+    }
     const candidateAccountAddresses = candidateAccountAddresses[chosenCandidate]
     voterId = voterId.toString();//to handle cases where voterId is passed as an int since the encrypter only accepts strings
     //Check for voter validity, if valid make the transaction(vote) and return true otherwise return false
