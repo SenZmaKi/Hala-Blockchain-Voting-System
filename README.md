@@ -57,4 +57,5 @@ The Hala blockchain voting system is a secure and transparent way for voters to 
 ## Contributors
 
 David Manga
+  
 Phidel Alvin
