@@ -43,16 +43,15 @@ async function fetchElectionResults(){
             })
             candidateVoteCounts.push(voteCount);
         }
-        let candidatesMap = {
-            uhuru:0,
-            ruto:0,
-            raila:0,
-            wajakoya:0
-        };
-        candidatesMap.uhuru = candidateVoteCounts[0];
-        candidatesMap.ruto = candidateVoteCounts[1];
-        candidatesMap.raila = candidateVoteCounts[2];
-        candidatesMap.wajakoya = candidateVoteCounts[3];
+        const uhuru = {name:'uhuru', votes:candidateVoteCounts[0]};
+        const raila = {name: 'raila', votes:candidateVoteCounts[1]};
+        const ruto = {name: 'ruto', votes:candidateVoteCounts[2]};
+        const wajakoya = {name: 'wajakoya', votes:candidateVoteCounts[3]};
+        let candidatesMap = [];
+        candidatesMap.push(uhuru);
+        candidatesMap.push(raila);
+        candidatesMap.push(ruto);
+        candidatesMap.push(wajakoya);
         return candidatesMap;
     }
 
